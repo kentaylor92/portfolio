@@ -1,0 +1,24 @@
+footer {
+    margin: 0 auto;
+    padding-top: 40px;
+
+    p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .footerSocialIcons ul {
+        display: flex;
+        justify-content: center;
+        font-size: 4rem;
+
+        li {
+            padding: 20px;
+        }
+
+        li a {
+            
+            color: $secondary-color;
+        }
+    }
+}

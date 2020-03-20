@@ -7,6 +7,18 @@ $(document).ready(function () {
         perturbance: 0.04,
     
     });
+    console.log('Hello, im working!');
+
+    $(function () {
+        $("#arrow").on('click', function () {
+            const position = $("#aboutMe").offset().top;
+            $("HTML, BODY").animate({
+                scrollTop: position
+            }, 1000);
+        });
+    });
+   
+
 
     // $(".bounce").click(function () {
     //     bounce($(this), 3, '10px', 300);
