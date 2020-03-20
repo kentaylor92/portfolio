@@ -1,0 +1,43 @@
+.aboutMe {
+    height: 100vh;
+    padding-top: 10vh;
+
+    .aboutMeInfo {
+        display: flex;
+        align-items: center;
+
+
+        .aboutMeImage {
+            width: 40%;
+        }
+
+        .aboutMeText {
+            width: 60%;
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 20px;
+
+                a {
+                    font-weight: 600;
+                    transition: 0.5s ease-in-out;
+                    
+                }
+
+                a:focus,
+                a:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+
+    .aboutMeImage img {
+        border-radius: 100%;
+        width: 400px;
+        height: 420px;
+        margin-top: 20px;
+        padding: 10px;
+        box-shadow: inset 0 0 0 5px $accent-color, 0 0 0 6px $secondary-color;   
+    }
+}

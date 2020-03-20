@@ -1,0 +1,31 @@
+.skills {
+    height: 100vh;
+    padding-top: 10vh;
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 0%, #6ecfd9 100%);
+
+    .skillsIcons ul {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        li {
+            padding: 50px;
+        }
+
+        li:hover i,
+        li:focus i {
+            color: $accent-color;
+        }
+    }
+
+    i {
+        font-size: 5vw;
+        transition: 0.5s ease-in-out;
+    }
+
+    p {
+        font-size: 2rem;
+        padding-top: 10px;
+    }
+}

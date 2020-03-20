@@ -1,0 +1,88 @@
+// stripping styles
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+div,
+section,
+img,
+header,
+footer,
+aside {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h1,
+h2 {
+
+    color: black;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    line-height: 1.25;
+    padding-left: 10px;
+    font-weight: lighter;
+    font-family: $heading-font;
+    transition: 3s ease-in;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+
+h2 {
+    font-size: 5.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: -3px -3px 0px $accent-color;  
+}
+
+// Global styles
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $body-font, sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 85%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
