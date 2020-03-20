@@ -181,16 +181,25 @@
        
     </section>    
 
-    <section class="contactMe" id="contact">
-        <form action="submit">
-            <label for="fullName">Full Name:</label>
-            <input type="text" name="fullName">
+    <section class="contactMe formWrapper" id="contact">
+        <h2>Contact Me</h2>
+        <form  class="formInnerWrapper" action="https://formspree.io/mwkqnjya" method="POST">
+            <div class="formFlex">
+                <label class="sr-only" for="fullName">Full Name:</label>
+                <input type="text" name="fullName" placeholder="Name">
+    
+                <label class="sr-only" for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="textArea">
+                <label class="sr-only" for="comments">Message</label>
+                <textarea name="message" id="message" cols="120" rows="10" placeholder="Message"></textarea>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" name="email">
+            <div class="formSubmit">
+                <input type="submit" value="Submit">
+            </div>
 
-            <label for="comments">Comments</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         </form>
     </section>
 

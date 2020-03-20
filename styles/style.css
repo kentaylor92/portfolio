@@ -529,6 +529,13 @@ header .arrow {
 
 .latestWork {
   padding-top: 10vh;
+  background-color: #6ecfd9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6ecfd9), color-stop(33%, #ffffff), color-stop(66%, #6ecfd9), to(#ffffff));
+  background-image: linear-gradient(180deg, #6ecfd9 0%, #ffffff 33%, #6ecfd9 66%, #ffffff 100%);
+}
+
+.latestWork img {
+  background: none;
 }
 
 .latestWork .projectFlex {
@@ -620,4 +627,94 @@ header .arrow {
 
 .latestWork .reverse .projectInfo .projectLinks a {
   margin: 0 0 0 20px;
+}
+
+.formWrapper {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.contactMe {
+  border: 2px solid #e73058;
+  margin-top: 100px;
+}
+
+.contactMe .formInnerWrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contactMe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.contactMe form .formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contactMe form .formFlex input {
+  width: calc(50% - 10px);
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #6ECFD9;
+  font-size: 2rem;
+}
+
+.contactMe form .formFlex input[type=text] {
+  margin-right: 20px;
+}
+
+.contactMe form .textArea textArea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid #6ECFD9;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+
+.contactMe form .formSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto;
+}
+
+.contactMe form .formSubmit input {
+  font-size: 2rem;
+  color: #e73058;
+  padding: 5px 30px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #6ECFD9;
+  margin-right: 20px;
+  background: none;
+}
+
+.contactMe form .formSubmit input:hover,
+.contactMe form .formSubmit input:focus {
+  color: white;
+  background-color: #e73058;
+  border: 2px solid #e73058;
+  cursor: pointer;
 }
