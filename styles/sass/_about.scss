@@ -1,7 +1,5 @@
 .aboutMe {
-    height: 100vh;
-    padding-top: 10vh;
-    position: relative;
+    padding: 50px 0;
 
     .aboutMeInfo {
         display: flex;
@@ -22,6 +20,7 @@
                 a {
                     font-weight: 600;
                     transition: 0.5s ease-in-out;
+                    text-decoration: underline;
                     
                 }
 
@@ -42,8 +41,5 @@
         box-shadow: inset 0 0 0 5px $accent-color, 0 0 0 6px $secondary-color;   
     }
 
-    .fa-chevron-down {
-        position: absolute;
-        bottom: 10%;
-    }
+    
 }

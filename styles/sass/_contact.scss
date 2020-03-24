@@ -1,6 +1,7 @@
 .formWrapper {
     margin: 0 auto;
     width: 60%;
+    margin-bottom: 50px;
 }
 
 .contactMe {
@@ -38,6 +39,9 @@
             margin-right: 20px;
         }
 
+        .formFlex Input:focus {
+            border-bottom: 2px solid $accent-color;
+        }
 
         .textArea {
 
@@ -48,6 +52,10 @@
                 border: 2px solid $secondary-color;
                 font-size: 1.8rem;
                 padding: 10px;
+            }
+
+            textArea:focus {
+                border: 2px solid $accent-color;
             }
         }
 
