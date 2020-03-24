@@ -50,6 +50,41 @@
             padding-bottom: 30px;
         }
 
+        li {
+            padding: 0 20px;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .listNormal {
+            display: flex;
+
+            .firstListItem {
+                padding-left: 0;
+            }
+            
+            // li {
+            //     padding: 0 20px;
+            //     font-size: 1.6rem;
+            //     font-weight: bold;
+            // }
+        }
+
+       
+        .listReverse {
+            display: flex;
+            justify-content: flex-end;
+
+            // li {
+            //     padding: 0 20px;
+            //     font-size: 1.6rem;
+            //     font-weight: bold;
+            // }            
+
+            .lastListItem {
+                padding-right: 0;
+            }
+        }
     }
 
     .projectLinks {

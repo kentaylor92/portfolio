@@ -462,7 +462,7 @@ header .fa-chevron-down {
 }
 
 .aboutMe {
-  padding: 50px 0;
+  padding: 120px 0;
 }
 
 .aboutMe .aboutMeInfo {
@@ -510,7 +510,7 @@ header .fa-chevron-down {
 }
 
 .skills {
-  padding-top: 10vh;
+  padding: 120px 0;
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#a8f0f8));
   background-image: linear-gradient(180deg, #ffffff 0%, #a8f0f8 100%);
@@ -534,8 +534,13 @@ header .fa-chevron-down {
   color: #e73058;
 }
 
+.skills .skillsIcons ul img {
+  width: 80px;
+  margin: 0 auto;
+}
+
 .skills i {
-  font-size: 5vw;
+  font-size: 6vw;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -543,14 +548,6 @@ header .fa-chevron-down {
 .skills p {
   font-size: 2rem;
   padding-top: 10px;
-}
-
-.skills .fa-chevron-down {
-  font-size: 3rem;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 10%;
-  text-shadow: 0px -12px 0 #e73058;
 }
 
 .latestWork {
@@ -615,6 +612,35 @@ header .fa-chevron-down {
   padding-bottom: 30px;
 }
 
+.latestWork .projectInfo li {
+  padding: 0 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.latestWork .projectInfo .listNormal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.latestWork .projectInfo .listNormal .firstListItem {
+  padding-left: 0;
+}
+
+.latestWork .projectInfo .listReverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.latestWork .projectInfo .listReverse .lastListItem {
+  padding-right: 0;
+}
+
 .latestWork .projectLinks {
   margin: 30px 0;
 }
@@ -654,8 +680,9 @@ header .fa-chevron-down {
 
 .formWrapper {
   margin: 0 auto;
-  width: 60%;
   margin-bottom: 50px;
+  width: 60%;
+  padding-top: 30px;
 }
 
 .contactMe {
@@ -692,7 +719,6 @@ header .fa-chevron-down {
 }
 
 .contactMe form .formFlex input {
-  width: calc(50% - 10px);
   height: 50px;
   margin-bottom: 20px;
   border: none;
@@ -708,9 +734,32 @@ header .fa-chevron-down {
   border-bottom: 2px solid #e73058;
 }
 
+.contactMe form .contactName,
+.contactMe form .contactEmail {
+  width: calc(50% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactMe form .contactName label,
+.contactMe form .contactEmail label {
+  font-size: 1.5rem;
+  color: #e73058;
+}
+
+.contactMe form .textArea label {
+  font-size: 1.5rem;
+  color: #e73058;
+}
+
 .contactMe form .textArea textArea {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 100%;
   border: 2px solid #6ECFD9;
   font-size: 1.8rem;

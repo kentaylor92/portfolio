@@ -1,7 +1,8 @@
 .formWrapper {
     margin: 0 auto;
-    width: 60%;
     margin-bottom: 50px;
+    width: 60%;
+    padding-top: 30px;
 }
 
 .contactMe {
@@ -27,7 +28,7 @@
         }
 
         .formFlex input {
-            width: calc(50% - 10px);
+            // width: calc(50% - 10px);
             height: 50px;
             margin-bottom: 20px;
             border: none;
@@ -43,15 +44,34 @@
             border-bottom: 2px solid $accent-color;
         }
 
+        .contactName,
+        .contactEmail {
+            width: calc(50% - 10px);
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1.5rem;
+                color: $accent-color;
+            }
+        }
+
         .textArea {
+
+            label {
+                font-size: 1.5rem;
+                color: $accent-color;
+            }
 
             textArea {
                 display: block;
-                margin:  0 auto;
+                margin:  10px auto;
                 width: 100%;
                 border: 2px solid $secondary-color;
                 font-size: 1.8rem;
                 padding: 10px;
+
+                
             }
 
             textArea:focus {
