@@ -461,6 +461,18 @@ header .fa-chevron-down {
   bottom: 10%;
 }
 
+header .sidebarLinks {
+  font-size: 3rem;
+  position: fixed;
+  right: 3%;
+  bottom: 40%;
+}
+
+header .sidebarLinks li i {
+  font-size: 2rem;
+  color: #6ECFD9;
+}
+
 .aboutMe {
   padding: 120px 0;
 }
@@ -507,6 +519,10 @@ header .fa-chevron-down {
   padding: 10px;
   -webkit-box-shadow: inset 0 0 0 5px #e73058, 0 0 0 6px #6ECFD9;
           box-shadow: inset 0 0 0 5px #e73058, 0 0 0 6px #6ECFD9;
+}
+
+.aboutMe .mobileAboutLinks {
+  display: none;
 }
 
 .skills {
@@ -801,9 +817,14 @@ header .fa-chevron-down {
 }
 
 .contactMe .emailDirect {
-  padding: 20px 0;
+  padding: 20px 0 30px 0;
   text-align: center;
   font-size: 1.8rem;
+}
+
+.contactMe .emailDirect i {
+  color: #e73058;
+  font-size: 2rem;
 }
 
 .contactMe .emailDirect a {

@@ -88,6 +88,18 @@ header {
         bottom: 10%;
     }
 
+    .sidebarLinks {
+        font-size: 3rem;
+        position: fixed;
+        right: 3%;
+        bottom: 40%;
+
+        li i {
+            font-size: 2rem;
+            color: $secondary-color;
+        }
+    }
+
 }
 
 
