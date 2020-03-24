@@ -77,4 +77,15 @@
         }
     }
 
+    .emailDirect  {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.8rem;
+
+    a {
+        color: $accent-color;
+        text-decoration: underline;
+    }
+}
+
 }
