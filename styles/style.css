@@ -473,12 +473,18 @@ header .sidebarLinks {
 
 header .sidebarLinks li i {
   font-size: 2rem;
+  padding: 5px;
   margin-bottom: 10px;
   color: #6ECFD9;
 }
 
+header .sidebarLinks li i:hover,
+header .sidebarLinks li i:focus {
+  color: #e73058;
+}
+
 .aboutMe {
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 .aboutMe .aboutMeInfo {
@@ -536,10 +542,6 @@ header .sidebarLinks li i {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#a8f0f8));
   background-image: linear-gradient(180deg, #ffffff 0%, #a8f0f8 100%);
   position: relative;
-}
-
-.skills .skillsIcons {
-  opacity: 0;
 }
 
 .skills .skillsIcons ul {

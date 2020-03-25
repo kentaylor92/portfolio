@@ -13,14 +13,18 @@ $(document).ready(function () {
     const scrollLeft = document.querySelectorAll('.scrollLeft');
     const scrollRight = document.querySelectorAll('.scrollRight');
 
-    observer = new IntersectionObserver((entries) => {
+    observer = new IntersectionObserver((entries, observer) => {
         
         entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
+            if (entry.isIntersecting) {
                 entry.target.style.animation = `anim1 1s ${entry.target.dataset.delay} forwards ease-in-out`;
+                observer.unobserve(entry.target);
+                
             } else {
                 entry.target.style.animation = `none`;
+                // count = 1;
             }
+            
         })
 
         
@@ -30,11 +34,12 @@ $(document).ready(function () {
     })
 
 
-    observer = new IntersectionObserver((entries) => {
+    observer = new IntersectionObserver((entries, observer) => {
 
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
                 entry.target.style.animation = `anim2 1s ${entry.target.dataset.delay} forwards ease-out`;
+                observer.unobserve(entry.target);
             } else {
                 entry.target.style.animation = `none`;
             }
@@ -44,11 +49,12 @@ $(document).ready(function () {
         observer.observe(image);
     });
 
-    observer = new IntersectionObserver((entries) => {
+    observer = new IntersectionObserver((entries, observer) => {
 
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
                 entry.target.style.animation = `anim3 1s ${entry.target.dataset.delay} forwards ease-out`;
+                observer.unobserve(entry.target);
             } else {
                 entry.target.style.animation = `none`;
             }
