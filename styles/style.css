@@ -365,10 +365,6 @@ body {
   opacity: 0;
 }
 
-header {
-  height: 650px;
-}
-
 header nav {
   background-color: white;
   position: fixed;
