@@ -80,7 +80,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1350px;
     width: 85%;
 }
 
@@ -105,5 +105,11 @@ body {
 .fa-chevron-down:hover,
 .fa-chevron-down:focus {
     opacity: 0.5;
+}
+
+.anim,
+.scrollLeft,
+.scrollRight {
+    opacity: 0;
 }
 

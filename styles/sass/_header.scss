@@ -1,5 +1,4 @@
 header {
-    position: relative;
     height: 650px;
 
     nav {
@@ -14,6 +13,7 @@ header {
             justify-content: space-between;
             align-items: center;
             padding: 0px 0 10px 0;
+            
 
                   
         }
@@ -64,6 +64,7 @@ header {
         height: 100vh;
         padding-top: 50px;
         animation: fadein 4s;
+        position: relative;
 
         @keyframes fadein {
             from {opacity: 0;}
@@ -89,13 +90,15 @@ header {
     }
 
     .sidebarLinks {
+        width: 7.5vw;
         font-size: 3rem;
         position: fixed;
-        right: 3%;
+        right: -10px;
         bottom: 40%;
 
         li i {
             font-size: 2rem;
+            margin-bottom: 10px;
             color: $secondary-color;
         }
     }

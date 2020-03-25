@@ -331,7 +331,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1350px;
   width: 85%;
 }
 
@@ -359,8 +359,13 @@ body {
   opacity: 0.5;
 }
 
+.anim,
+.scrollLeft,
+.scrollRight {
+  opacity: 0;
+}
+
 header {
-  position: relative;
   height: 650px;
 }
 
@@ -433,6 +438,7 @@ header .headerText {
   padding-top: 50px;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
+  position: relative;
 }
 
 @keyframes fadein {
@@ -462,18 +468,21 @@ header .fa-chevron-down {
 }
 
 header .sidebarLinks {
+  width: 7.5vw;
   font-size: 3rem;
   position: fixed;
-  right: 3%;
+  right: -10px;
   bottom: 40%;
 }
 
 header .sidebarLinks li i {
   font-size: 2rem;
+  margin-bottom: 10px;
   color: #6ECFD9;
 }
 
 .aboutMe {
+  margin-top: 120px;
   padding: 120px 0;
 }
 
@@ -487,6 +496,7 @@ header .sidebarLinks li i {
 }
 
 .aboutMe .aboutMeInfo .aboutMeImage {
+  margin-top: 60px;
   width: 40%;
 }
 
@@ -526,11 +536,15 @@ header .sidebarLinks li i {
 }
 
 .skills {
-  padding: 120px 0;
+  padding: 120px 0 120px 0;
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#a8f0f8));
   background-image: linear-gradient(180deg, #ffffff 0%, #a8f0f8 100%);
   position: relative;
+}
+
+.skills .skillsIcons {
+  opacity: 0;
 }
 
 .skills .skillsIcons ul {
@@ -566,6 +580,32 @@ header .sidebarLinks li i {
   padding-top: 10px;
 }
 
+@-webkit-keyframes anim1 {
+  from {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim1 {
+  from {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .latestWork {
   padding-top: 10vh;
   background-color: #6ecfd9;
@@ -576,6 +616,7 @@ header .sidebarLinks li i {
 
 .latestWork img {
   background: none;
+  opacity: 0;
 }
 
 .latestWork .projectFlex {
@@ -692,6 +733,58 @@ header .sidebarLinks li i {
 
 .latestWork .reverse .projectInfo .projectLinks a {
   margin: 0 0 0 20px;
+}
+
+@-webkit-keyframes anim2 {
+  from {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anim3 {
+  from {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .formWrapper {

@@ -7,6 +7,7 @@
 
     img {
         background: none;
+        opacity: 0;
     }
 
     .projectFlex {
@@ -120,5 +121,27 @@
             }
         }
 
-    
+
+}
+
+@keyframes anim2 {
+        from {
+            transform: translateX(-120px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+@keyframes anim3 {
+    from {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
