@@ -464,7 +464,7 @@ header .fa-chevron-down {
 }
 
 header .sidebarLinks {
-  width: 7.5vw;
+  width: 7.5%;
   font-size: 3rem;
   position: fixed;
   right: -10px;
@@ -478,8 +478,7 @@ header .sidebarLinks li i {
 }
 
 .aboutMe {
-  margin-top: 120px;
-  padding: 120px 0;
+  padding: 40px 0;
 }
 
 .aboutMe .aboutMeInfo {
@@ -532,7 +531,7 @@ header .sidebarLinks li i {
 }
 
 .skills {
-  padding: 120px 0 120px 0;
+  padding: 60px 0 60px 0;
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#a8f0f8));
   background-image: linear-gradient(180deg, #ffffff 0%, #a8f0f8 100%);
@@ -603,7 +602,7 @@ header .sidebarLinks li i {
 }
 
 .latestWork {
-  padding-top: 10vh;
+  padding-top: 40px;
   background-color: #6ecfd9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a8f0f8), color-stop(33%, #ffffff), color-stop(66%, #a8f0f8), to(#ffffff));
   background-image: linear-gradient(180deg, #a8f0f8 0%, #ffffff 33%, #a8f0f8 66%, #ffffff 100%);
