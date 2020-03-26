@@ -32,40 +32,6 @@ img {
     width: 100%;
 }
 
-h1 {
-    font-size: 8rem;
-}
-
-h1,
-h2 {
-
-    color: black;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    text-transform: uppercase;
-    line-height: 1.25;
-    padding-left: 10px;
-    font-weight: lighter;
-    font-family: $heading-font;
-    transition: 3s ease-in;
-    animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-         -o-animation: fadein 4s; /* Opera < 12.1 */
-
-    @keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-}
-
-h2 {
-    font-size: 5.5rem;
-    text-align: center;
-    margin-bottom: 50px;
-    text-shadow: -3px -3px 0px $accent-color;  
-}
 
 // Global styles
 
@@ -112,4 +78,13 @@ body {
 .scrollRight {
     opacity: 0;
 }
+
+h2 {
+        font-family: $heading-font;
+        font-size: 5.5rem;
+        text-align: center;
+        margin-bottom: 50px;
+        text-shadow: -3px -3px 0px $accent-color;  
+        text-transform: uppercase;
+    }
 

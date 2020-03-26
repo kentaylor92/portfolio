@@ -1,5 +1,6 @@
 header {
 
+
     nav {
         background-color: white;
         position: fixed;
@@ -50,6 +51,41 @@ header {
         }
     }
 
+    h1 {
+        font-size: 8rem;
+        padding-top: 10%;
+    }
+
+    h2 {
+         opacity: 0.7;
+        text-shadow: none;
+    }
+
+
+    h1,
+    h2 {
+        text-align: center;
+        color: black;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        line-height: 1.25;
+        padding-left: 10px;
+        font-weight: lighter;
+        font-family: $heading-font;
+        transition: 3s ease-in;
+        animation: fadein 4s;
+        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+            -ms-animation: fadein 4s; /* Internet Explorer */
+            -o-animation: fadein 4s; /* Opera < 12.1 */
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+    }
+
     
 
     .headerText {
@@ -67,18 +103,6 @@ header {
             top {opacity: 1};
         }
     };
-
-    h1, 
-    h2 {
-        text-align: center;
-        padding-top: 10%;
-    }
-
-    h2 {
-        padding-top: 0;
-        text-shadow: none;
-        opacity: 0.7;
-    }   
 
     .fa-chevron-down {
         position: absolute;
@@ -107,5 +131,114 @@ header {
 
 }
 
+.menu-btn {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 1%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transform: all 0.2s ease-in-out;
+        z-index: 2;
+    }
+
+    .menu-btn-burger {
+        width: 38px;
+        height: 6px;
+        background: black;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+
+    }
+    
+    .menu-btn-burger::before,
+    .menu-btn-burger::after {
+        content: '';
+        position: absolute;
+        width: 38px;
+        height: 6px;
+        background: black;
+        border-radius: 5px;
+        transform: all 0.2s ease-in-out;  
+    }
+
+    .menu-btn-burger::before {
+        transform: translateY(-16px);
+    }
+
+    .menu-btn-burger::after {
+        transform: translateY(16px);
+    }
+
+    .open .menu-btn-burger {
+        transform: translateX(-50px);
+        background: none;
+    }
+
+    .open .menu-btn-burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .open .menu-btn-burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
 
 
+@media (max-width: 1055px) {
+    header {
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    header {
+
+        .menu-btn {
+            display: flex;
+        }
+    
+        .navBar {
+            display: none;
+        }
+
+        .sidebarLinks {
+            display: none;
+        }
+
+        h2 {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        h1 {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+
+    .menu-btn {
+        right: 7%;
+    }
+
+}
