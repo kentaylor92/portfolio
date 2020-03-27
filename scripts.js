@@ -2,16 +2,24 @@
 
 $(document).ready(function () {
 
+    
+
+
+    
+    
     const menuBtn = document.querySelector('.menu-btn');
-    const navBar = document.querySelector('.navBar');
     let menuOpen = false;
     menuBtn.addEventListener('click', () => {
         if(!menuOpen) {
             menuBtn.classList.add('open');
             menuOpen = true;
+            $('.navBar').css('display', 'flex');
+
         } else {
             menuBtn.classList.remove('open');
             menuOpen = false;
+            $('.navBar').css('display', 'none');
+           
         }
     });
 
@@ -22,6 +30,8 @@ $(document).ready(function () {
         perturbance: 0.04,
     
     });
+
+
 
     const scrollDown = document.querySelectorAll('.anim');
     const scrollLeft = document.querySelectorAll('.scrollLeft');
@@ -78,27 +88,7 @@ $(document).ready(function () {
         observer.observe(image);
     });
 
-    
-    
 
-
-    
-    
-   
-
-
-    // $(".bounce").click(function () {
-    //     bounce($(this), 3, '10px', 300);
-    // });
-
-
-
-    // function bounce(element, times, distance, speed) {
-    //     for (i = 0; i < times; i++) {
-    //         element.animate({ marginTop: '-=' + distance }, speed)
-    //             .animate({ marginTop: '+=' + distance }, speed);
-    //     }
-    // }
 
 });      
 

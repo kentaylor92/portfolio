@@ -383,6 +383,11 @@ header nav ul li a:focus {
   color: #e73058;
 }
 
+header .navBar {
+  -webkit-animation: 1s ease-in-out;
+          animation: 1s ease-in-out;
+}
+
 header h1 {
   font-size: 8rem;
   padding-top: 10%;
@@ -483,67 +488,27 @@ header .sidebarLinks li i:focus {
 .menu-btn {
   display: none;
   position: fixed;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
-  right: 1%;
-  width: 50px;
-  height: 50px;
+  top: 5px;
+  right: 0;
+  width: 38px;
+  height: 38px;
   cursor: pointer;
-  -webkit-transform: all 0.2s ease-in-out;
-          transform: all 0.2s ease-in-out;
+  background: none;
+  border: none;
+  padding-right: 5px;
+  -webkit-transform: all 0.3s ease-in-out;
+          transform: all 0.3s ease-in-out;
   z-index: 2;
 }
 
-.menu-btn-burger {
-  width: 38px;
-  height: 6px;
-  background: black;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-btn-burger::before,
-.menu-btn-burger::after {
-  content: '';
-  position: absolute;
-  width: 38px;
-  height: 6px;
-  background: black;
-  border-radius: 5px;
-  -webkit-transform: all 0.2s ease-in-out;
-          transform: all 0.2s ease-in-out;
-}
-
-.menu-btn-burger::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
-}
-
-.menu-btn-burger::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
-}
-
-.open .menu-btn-burger {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  background: none;
-}
-
-.open .menu-btn-burger::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
-}
-
-.open .menu-btn-burger::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
+.fa-bars {
+  font-size: 3rem;
 }
 
 @media (max-width: 1055px) {
@@ -556,19 +521,43 @@ header .sidebarLinks li i:focus {
 }
 
 @media (max-width: 768px) {
+  header .headerText {
+    background-image: url("./../assets/header-image-gradiant.jpg");
+  }
   header .menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   header .navBar {
+    position: absolute;
+    top: 50px;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 4rem;
+    height: 50vh;
+    width: 85vw;
+    background-color: #6ECFD9;
+  }
+  header nav ul li {
+    padding-left: 0;
+  }
+  header nav ul li a {
+    font-size: 3rem;
   }
   header .sidebarLinks {
     display: none;
   }
   header h2 {
     padding-bottom: 50px;
+  }
+  header .menu-btn {
+    right: 7.5%;
   }
 }
 
@@ -580,9 +569,6 @@ header .sidebarLinks li i:focus {
   }
   header h2 {
     font-size: 2.8rem;
-  }
-  .menu-btn {
-    right: 7%;
   }
 }
 
@@ -1230,6 +1216,43 @@ header .sidebarLinks li i:focus {
   text-decoration: underline;
 }
 
+@media (max-width: 1050px) {
+  .formWrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .formWrapper {
+    width: 80%;
+  }
+  .contactMe .formInnerWrapper {
+    width: 90%;
+  }
+  .contactMe form .formFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contactMe form .formFlex input {
+    font-size: 1.6rem;
+  }
+  .contactMe form .contactName,
+  .contactMe form .contactEmail {
+    width: 80%;
+  }
+  .contactMe form .textArea textarea {
+    font-size: 1.6rem;
+  }
+  .contactMe form .formSubmit input {
+    font-size: 1.6rem;
+  }
+}
+
 footer {
   margin: 0 auto;
 }
@@ -1262,4 +1285,10 @@ footer .footerSocialIcons ul li a {
 footer .footerSocialIcons ul li a:hover,
 footer .footerSocialIcons ul li a:focus {
   color: #e73058;
+}
+
+@media (max-width: 480px) {
+  footer .footerSocialIcons ul {
+    font-size: 3.5rem;
+  }
 }

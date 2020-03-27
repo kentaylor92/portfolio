@@ -25,5 +25,13 @@ footer {
             color: $accent-color;
         }
     }
+}
 
+@media (max-width: 480px) {
+    footer {
+
+        .footerSocialIcons ul {
+            font-size: 3.5rem;
+        }
+    }
 }
