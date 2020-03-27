@@ -322,6 +322,12 @@ h2 {
   text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 header nav {
   background-color: white;
   position: fixed;
@@ -569,11 +575,15 @@ header .sidebarLinks li i:focus {
     padding-bottom: 50px;
   }
   header .menu-btn {
+    top: 8px;
     right: 7.5%;
   }
 }
 
 @media (max-width: 480px) {
+  header .logo {
+    padding-left: 7.5%;
+  }
   header h1 {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -581,6 +591,9 @@ header .sidebarLinks li i:focus {
   }
   header h2 {
     font-size: 2.8rem;
+  }
+  header .navBar {
+    width: 100%;
   }
 }
 

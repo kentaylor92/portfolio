@@ -88,3 +88,8 @@ h2 {
         text-transform: uppercase;
     }
 
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+    }
+}
