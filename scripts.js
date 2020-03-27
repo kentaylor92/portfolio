@@ -3,39 +3,43 @@
 $(document).ready(function () {
 
     const menuBtn = document.querySelector('.menu-btn');
+    const navBar = document.querySelector('.navBar');
     let menuOpen = false;
     $('.fa-times').css('display', 'none');
 
     menuBtn.addEventListener('click', () => {
-        if(!menuOpen) {
-            menuBtn.classList.add('open');
-            menuOpen = true;
-            $('.navBar').css('display', 'flex');
-            $('.fa-bars').css('display', 'none');
-            $('.fa-times').css('display', 'flex');
-
+        if (!menuOpen) {
+            openMenu();
+            closeMenuOnClick();
+           
         } else {
-            menuBtn.classList.remove('open');
-            menuOpen = false;
-            $('.navBar').css('display', 'none');
-            $('.fa-bars').css('display', 'flex');
-            $('.fa-times').css('display', 'none');    
+            closeMenu();         
         }
     });
 
-    $('.navBar li a').on("click", function () {
-        $(menuBtn).click();
-    });
-
+    function openMenu() {
+        navBar.classList.add('open');
+        menuOpen = true;
+    };
     
+    function closeMenu() {
+        navBar.classList.remove('open');
+        menuOpen = false;
+    }
+
+    function closeMenuOnClick() {
+        $('.navBar li a').on("click", function () {
+            closeMenu();
+        });
+    }
+
+
     $('.headerText').ripples({
         resolution: 512,
         dropRadius: 20,
         perturbance: 0.04,
     
     });
-
-
 
     const scrollDown = document.querySelectorAll('.anim');
     const scrollLeft = document.querySelectorAll('.scrollLeft');
