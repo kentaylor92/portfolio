@@ -2,25 +2,29 @@
 
 $(document).ready(function () {
 
-    
-
-
-    
-    
     const menuBtn = document.querySelector('.menu-btn');
     let menuOpen = false;
+    $('.fa-times').css('display', 'none');
+
     menuBtn.addEventListener('click', () => {
         if(!menuOpen) {
             menuBtn.classList.add('open');
             menuOpen = true;
             $('.navBar').css('display', 'flex');
+            $('.fa-bars').css('display', 'none');
+            $('.fa-times').css('display', 'flex');
 
         } else {
             menuBtn.classList.remove('open');
             menuOpen = false;
             $('.navBar').css('display', 'none');
-           
+            $('.fa-bars').css('display', 'flex');
+            $('.fa-times').css('display', 'none');    
         }
+    });
+
+    $('.navBar li a').on("click", function () {
+        $(menuBtn).click();
     });
 
     

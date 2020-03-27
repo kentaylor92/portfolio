@@ -314,7 +314,7 @@ body {
 }
 
 h2 {
-  font-family: "Concert One", cursive;
+  font-family: "Concert One", sans-serif;
   font-size: 5.5rem;
   text-align: center;
   margin-bottom: 50px;
@@ -345,7 +345,7 @@ header nav .wrapper {
 
 header nav a {
   font-size: 3rem;
-  font-family: "Concert One", cursive;
+  font-family: "Concert One", sans-serif;
   text-transform: uppercase;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -384,8 +384,8 @@ header nav ul li a:focus {
 }
 
 header .navBar {
-  -webkit-animation: 1s ease-in-out;
-          animation: 1s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 header h1 {
@@ -408,7 +408,7 @@ header h2 {
   line-height: 1.25;
   padding-left: 10px;
   font-weight: lighter;
-  font-family: "Concert One", cursive;
+  font-family: "Concert One", sans-serif;
   -webkit-transition: 3s ease-in;
   transition: 3s ease-in;
   animation: fadein 4s;
@@ -485,30 +485,37 @@ header .sidebarLinks li i:focus {
   color: #e73058;
 }
 
+.fa-bars,
+.fa-times {
+  font-size: 3rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #6ECFD9;
+}
+
+.fa-bars:hover,
+.fa-bars:focus,
+.fa-times:hover,
+.fa-times:focus {
+  color: #e73058;
+}
+
+.fa-times {
+  display: none;
+}
+
 .menu-btn {
   display: none;
   position: fixed;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   top: 5px;
   right: 0;
-  width: 38px;
-  height: 38px;
   cursor: pointer;
   background: none;
   border: none;
-  padding-right: 5px;
+  padding: 0;
   -webkit-transform: all 0.3s ease-in-out;
           transform: all 0.3s ease-in-out;
   z-index: 2;
-}
-
-.fa-bars {
-  font-size: 3rem;
 }
 
 @media (max-width: 1055px) {
