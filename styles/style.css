@@ -1278,6 +1278,12 @@ header .sidebarLinks li i:focus {
   }
 }
 
+@media (max-width: 480px) {
+  .formWrapper {
+    width: 93%;
+  }
+}
+
 footer {
   margin: 0 auto;
 }
