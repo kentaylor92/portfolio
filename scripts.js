@@ -20,11 +20,16 @@ $(document).ready(function () {
     function openMenu() {
         navBar.classList.add('open');
         menuOpen = true;
+        $('.fa-bars').css('display', 'none');
+        $('.fa-times').css('display', 'flex');
+        
     };
     
     function closeMenu() {
         navBar.classList.remove('open');
         menuOpen = false;
+        $('.fa-bars').css('display', 'flex');
+        $('.fa-times').css('display', 'none');
     }
 
     function closeMenuOnClick() {
