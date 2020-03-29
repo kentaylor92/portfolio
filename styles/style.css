@@ -598,7 +598,7 @@ header .sidebarLinks li i:focus {
 }
 
 .aboutMe {
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .aboutMe .aboutMeInfo {
