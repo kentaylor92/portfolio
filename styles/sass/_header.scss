@@ -6,13 +6,18 @@ header {
         width: 100%;
         height: 50px;
         z-index: 1;
+
+        a {
+            outline: none;
+        }
         
 
         .wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0px 0 10px 0;                  
+            height: 100%;
+            padding-bottom: 10px;               
         }
 
         a {
@@ -44,7 +49,7 @@ header {
 
             li a:hover,
             li a:focus  {
-                padding-bottom: 10px;
+                // padding-bottom: 10px;
                 color: $accent-color;
             }
         }
@@ -114,21 +119,27 @@ header {
 
     .sidebarLinks {
         width: 7.5%;
-        font-size: 3rem;
         position: fixed;
         right: -10px;
         bottom: 40%;
 
-        li i {
+        :focus {
+            outline: none;
+        }
+        
+
+        i {
             font-size: 2rem;
             padding: 5px;
             margin-bottom: 10px;
             color: $secondary-color;
+            transition: 0.3s ease-in-out;
         }
 
-        li i:hover,
-        li i:focus {
+        :hover i,
+        :focus i {
             color: $accent-color;
+            
         }
     }
 }
@@ -160,6 +171,7 @@ header {
     cursor: pointer;
     background: none;
     border: none;
+    outline: none;
     padding: 0;
     transform: all 0.3s ease-in-out;
     z-index: 2;  

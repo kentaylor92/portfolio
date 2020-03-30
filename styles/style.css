@@ -336,6 +336,10 @@ header nav {
   z-index: 1;
 }
 
+header nav a {
+  outline: none;
+}
+
 header nav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,7 +350,8 @@ header nav .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 0 10px 0;
+  height: 100%;
+  padding-bottom: 10px;
 }
 
 header nav a {
@@ -385,7 +390,6 @@ header nav ul li a {
 
 header nav ul li a:hover,
 header nav ul li a:focus {
-  padding-bottom: 10px;
   color: #e73058;
 }
 
@@ -473,21 +477,26 @@ header .fa-chevron-down {
 
 header .sidebarLinks {
   width: 7.5%;
-  font-size: 3rem;
   position: fixed;
   right: -10px;
   bottom: 40%;
 }
 
-header .sidebarLinks li i {
+header .sidebarLinks :focus {
+  outline: none;
+}
+
+header .sidebarLinks i {
   font-size: 2rem;
   padding: 5px;
   margin-bottom: 10px;
   color: #6ECFD9;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-header .sidebarLinks li i:hover,
-header .sidebarLinks li i:focus {
+header .sidebarLinks :hover i,
+header .sidebarLinks :focus i {
   color: #e73058;
 }
 
@@ -518,6 +527,7 @@ header .sidebarLinks li i:focus {
   cursor: pointer;
   background: none;
   border: none;
+  outline: none;
   padding: 0;
   -webkit-transform: all 0.3s ease-in-out;
           transform: all 0.3s ease-in-out;
@@ -1275,6 +1285,7 @@ header .sidebarLinks li i:focus {
   }
   .contactMe form .formSubmit input {
     font-size: 1.6rem;
+    outline: none;
   }
 }
 
@@ -1286,6 +1297,7 @@ header .sidebarLinks li i:focus {
 
 footer {
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 footer p {
