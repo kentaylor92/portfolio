@@ -398,108 +398,6 @@ header .navBar {
   transition: 0.3s ease-in-out;
 }
 
-header h1 {
-  font-size: 8rem;
-  padding-top: 10%;
-}
-
-header h2 {
-  opacity: 0.7;
-  text-shadow: none;
-}
-
-header h1,
-header h2 {
-  text-align: center;
-  color: black;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  line-height: 1.25;
-  padding-left: 10px;
-  font-weight: lighter;
-  font-family: "Concert One", sans-serif;
-  -webkit-transition: 3s ease-in;
-  transition: 3s ease-in;
-  animation: fadein 4s;
-  -webkit-animation: fadein 4s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 4s;
-  /* Internet Explorer */
-  -o-animation: fadein 4s;
-  /* Opera < 12.1 */
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-header .headerText {
-  background-image: url("https://i.imgur.com/gsEnpGn.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  padding-top: 50px;
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
-  position: relative;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  top {
-    opacity: 1;
-  }
-}
-
-header .fa-chevron-down {
-  position: absolute;
-  bottom: 10%;
-}
-
-header .sidebarLinks {
-  width: 7.5%;
-  position: fixed;
-  right: -10px;
-  bottom: 40%;
-}
-
-header .sidebarLinks :focus {
-  outline: none;
-}
-
-header .sidebarLinks i {
-  font-size: 2rem;
-  padding: 5px;
-  margin-bottom: 10px;
-  color: #6ECFD9;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-header .sidebarLinks :hover i,
-header .sidebarLinks :focus i {
-  color: #e73058;
-}
-
 .fa-bars,
 .fa-times {
   font-size: 3rem;
@@ -534,19 +432,7 @@ header .sidebarLinks :focus i {
   z-index: 2;
 }
 
-@media (max-width: 1055px) {
-  header h1 {
-    font-size: 6rem;
-  }
-  header h2 {
-    font-size: 4rem;
-  }
-}
-
 @media (max-width: 768px) {
-  header .headerText {
-    background-image: url("./../assets/header-image-gradiant.jpg");
-  }
   header .menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -578,12 +464,6 @@ header .sidebarLinks :focus i {
   header nav ul li a {
     font-size: 3rem;
   }
-  header .sidebarLinks {
-    display: none;
-  }
-  header h2 {
-    padding-bottom: 50px;
-  }
   header .menu-btn {
     top: 8px;
     right: 7.5%;
@@ -594,16 +474,153 @@ header .sidebarLinks :focus i {
   header .logo {
     padding-left: 7.5%;
   }
-  header h1 {
+  header .navBar {
+    width: 100%;
+  }
+}
+
+.heroText {
+  background-image: url("https://i.imgur.com/gsEnpGn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 50px;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+  position: relative;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  top {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  top {
+    opacity: 1;
+  }
+}
+
+.heroText .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  bottom: 10%;
+}
+
+.sidebarLinks {
+  width: 7.5%;
+  position: fixed;
+  right: -10px;
+  bottom: 40%;
+}
+
+.sidebarLinks :focus {
+  outline: none;
+}
+
+.sidebarLinks i {
+  font-size: 2rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #6ECFD9;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebarLinks :hover i,
+.sidebarLinks :focus i {
+  color: #e73058;
+}
+
+h1 {
+  font-size: 8rem;
+  padding-top: 10%;
+}
+
+h2 {
+  opacity: 0.7;
+  text-shadow: none;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: black;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  line-height: 1.25;
+  padding-left: 10px;
+  font-weight: lighter;
+  font-family: "Concert One", sans-serif;
+  -webkit-transition: 3s ease-in;
+  transition: 3s ease-in;
+  animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 4s;
+  /* Internet Explorer */
+  -o-animation: fadein 4s;
+  /* Opera < 12.1 */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1055px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarLinks {
+    display: none;
+  }
+  h2 {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 4rem;
   }
-  header h2 {
+  h2 {
     font-size: 2.8rem;
-  }
-  header .navBar {
-    width: 100%;
   }
 }
 
