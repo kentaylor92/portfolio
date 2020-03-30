@@ -95,28 +95,28 @@
     }
 
     .reverse {
-            flex-direction: row-reverse;
+        flex-direction: row-reverse;
 
-            .projectInfo {
-                text-align: right;
+        .projectInfo {
+            text-align: right;
 
-                .projectLinks a {
-                    margin: 0 0 0 20px;
-                }
+            .projectLinks a {
+                margin: 0 0 0 20px;
             }
         }
+    }
 }
 
 @keyframes anim2 {
-        from {
-            transform: translateX(-120px);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
+    from {
+        transform: translateX(-120px);
+        opacity: 0;
     }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes anim3 {
     from {
@@ -130,7 +130,6 @@
 }
 
 
-
 @media (max-width: 1050px) {
     .latestWork {
         .project {
@@ -140,8 +139,7 @@
 
         .projectImageContainer {
             width: 70%;
-            margin: 0 auto;
-           
+            margin: 0 auto;          
         }
 
         img {
@@ -189,8 +187,7 @@
 
         .projectLinks {
             margin: 0 auto;
-            text-align: center;
-            
+            text-align: center;           
         }        
     }
 }
@@ -265,8 +262,7 @@
         }
 
         .projectImageContainer {
-            min-width: 10px;   
-            
+            min-width: 10px;              
         }
     }
 }

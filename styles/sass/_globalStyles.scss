@@ -1,4 +1,4 @@
-// stripping styles
+
 body,
 h1,
 h2,
@@ -32,9 +32,6 @@ img {
     width: 100%;
 }
 
-
-// Global styles
-
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -52,25 +49,6 @@ body {
 
 .uppercase {
     text-transform: uppercase;
-}
-
-.arrow {
-    text-align: center;
-    margin: 0 auto;
-}
-
- .fa-chevron-down {
-    font-size: 3rem;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 10%;
-    text-shadow: 0px -12px 0 $accent-color;
-    transition: 0.4s;
-}
-
-.fa-chevron-down:hover,
-.fa-chevron-down:focus {
-    opacity: 0.5;
 }
 
 .anim,

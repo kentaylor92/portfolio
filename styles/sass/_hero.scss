@@ -20,9 +20,7 @@
             padding-bottom: 10px;               
         }
 
-    };
-
-    .fa-chevron-down {
+         .fa-chevron-down {
         position: absolute;
         bottom: 10%;
     }
@@ -37,7 +35,6 @@
             outline: none;
         }
         
-
         i {
             font-size: 2rem;
             padding: 5px;
@@ -48,12 +45,11 @@
 
         :hover i,
         :focus i {
-            color: $accent-color;
-            
+            color: $accent-color;         
         }
     }
 
-     h1 {
+    h1 {
         font-size: 8rem;
         padding-top: 10%;
     }
@@ -87,40 +83,65 @@
         }
     }
 
-@media (max-width: 1055px) {
-
-    h1 {
-        font-size: 6rem;
+    .arrow {
+        text-align: center;
+        margin: 0 auto;
     }
 
-    h2 {
-        font-size: 4rem;
-    }   
+    .fa-chevron-down {
+        font-size: 3rem;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 10%;
+        text-shadow: 0px -12px 0 $accent-color;
+        transition: 0.4s;
+    }
+
+    .fa-chevron-down:hover,
+    .fa-chevron-down:focus {
+        opacity: 0.5;
+    }
+};
+
+   
+
+@media (max-width: 1055px) {
+
+    .heroText {
+        
+        h1 {
+            font-size: 6rem;
+        }
+    
+        h2 {
+            font-size: 4rem;
+        }   
+    }
 }
 
 @media (max-width: 768px) {
-    //  .heroText {
-    //         background-image: url('./../assets/header-image-gradiant.jpg');  
-    //     }
-
-        .sidebarLinks {
-            display: none;
-        }
-
-        h2 {
-            padding-bottom: 50px;
-        }
+     .heroText {
+         .sidebarLinks {
+             display: none;
+         }
+ 
+         h2 {
+             padding-bottom: 50px;
+         }  
+    }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        padding-top: 10%;
-        padding-bottom: 10%;
-        font-size: 4rem;
+    .heroText {
+        h1 {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            font-size: 4rem;
+            }
+    
+        h2 {
+            font-size: 2.8rem;
         }
-
-    h2 {
-        font-size: 2.8rem;
     }
 }
 

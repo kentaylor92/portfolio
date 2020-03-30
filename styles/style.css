@@ -287,26 +287,6 @@ body {
   text-transform: uppercase;
 }
 
-.arrow {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.fa-chevron-down {
-  font-size: 3rem;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 10%;
-  text-shadow: 0px -12px 0 #e73058;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.fa-chevron-down:hover,
-.fa-chevron-down:focus {
-  opacity: 0.5;
-}
-
 .anim,
 .scrollLeft,
 .scrollRight {
@@ -522,23 +502,23 @@ header .navBar {
   padding-bottom: 10px;
 }
 
-.fa-chevron-down {
+.heroText .fa-chevron-down {
   position: absolute;
   bottom: 10%;
 }
 
-.sidebarLinks {
+.heroText .sidebarLinks {
   width: 7.5%;
   position: fixed;
   right: -10px;
   bottom: 40%;
 }
 
-.sidebarLinks :focus {
+.heroText .sidebarLinks :focus {
   outline: none;
 }
 
-.sidebarLinks i {
+.heroText .sidebarLinks i {
   font-size: 2rem;
   padding: 5px;
   margin-bottom: 10px;
@@ -547,23 +527,23 @@ header .navBar {
   transition: 0.3s ease-in-out;
 }
 
-.sidebarLinks :hover i,
-.sidebarLinks :focus i {
+.heroText .sidebarLinks :hover i,
+.heroText .sidebarLinks :focus i {
   color: #e73058;
 }
 
-h1 {
+.heroText h1 {
   font-size: 8rem;
   padding-top: 10%;
 }
 
-h2 {
+.heroText h2 {
   opacity: 0.7;
   text-shadow: none;
 }
 
-h1,
-h2 {
+.heroText h1,
+.heroText h2 {
   text-align: center;
   color: black;
   -moz-background-clip: text;
@@ -595,31 +575,51 @@ h2 {
   }
 }
 
+.heroText .arrow {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heroText .fa-chevron-down {
+  font-size: 3rem;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10%;
+  text-shadow: 0px -12px 0 #e73058;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.heroText .fa-chevron-down:hover,
+.heroText .fa-chevron-down:focus {
+  opacity: 0.5;
+}
+
 @media (max-width: 1055px) {
-  h1 {
+  .heroText h1 {
     font-size: 6rem;
   }
-  h2 {
+  .heroText h2 {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 768px) {
-  .sidebarLinks {
+  .heroText .sidebarLinks {
     display: none;
   }
-  h2 {
+  .heroText h2 {
     padding-bottom: 50px;
   }
 }
 
 @media (max-width: 480px) {
-  h1 {
+  .heroText h1 {
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 4rem;
   }
-  h2 {
+  .heroText h2 {
     font-size: 2.8rem;
   }
 }

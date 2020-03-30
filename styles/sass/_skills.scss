@@ -10,13 +10,10 @@
 
     .skillsIcons ul {
         text-align: center;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-
 
         li {
             width: calc(20% - 30px);
@@ -32,7 +29,6 @@
             width: 80px;
             margin: 0 auto;
         }
-
     }
 
     i {
