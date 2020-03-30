@@ -39,7 +39,7 @@ $(document).ready(function () {
     }
 
 
-    $('.headerText').ripples({
+    $('.heroText').ripples({
         resolution: 512,
         dropRadius: 20,
         perturbance: 0.04,
@@ -100,8 +100,6 @@ $(document).ready(function () {
     scrollRight.forEach(image => {
         observer.observe(image);
     });
-
-
 
 });      
 

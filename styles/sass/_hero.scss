@@ -1,0 +1,126 @@
+.heroText {
+        background-image: url('https://i.imgur.com/gsEnpGn.jpg');  
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        padding-top: 50px;
+        animation: fadein 4s;
+        position: relative;
+
+        @keyframes fadein {
+            from {opacity: 0;}
+            top {opacity: 1};
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding-bottom: 10px;               
+        }
+
+    };
+
+    .fa-chevron-down {
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .sidebarLinks {
+        width: 7.5%;
+        position: fixed;
+        right: -10px;
+        bottom: 40%;
+
+        :focus {
+            outline: none;
+        }
+        
+
+        i {
+            font-size: 2rem;
+            padding: 5px;
+            margin-bottom: 10px;
+            color: $secondary-color;
+            transition: 0.3s ease-in-out;
+        }
+
+        :hover i,
+        :focus i {
+            color: $accent-color;
+            
+        }
+    }
+
+     h1 {
+        font-size: 8rem;
+        padding-top: 10%;
+    }
+
+    h2 {
+         opacity: 0.7;
+        text-shadow: none;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        color: black;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        line-height: 1.25;
+        padding-left: 10px;
+        font-weight: lighter;
+        font-family: $heading-font;
+        transition: 3s ease-in;
+        animation: fadein 4s;
+        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+            -ms-animation: fadein 4s; /* Internet Explorer */
+            -o-animation: fadein 4s; /* Opera < 12.1 */
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+    }
+
+@media (max-width: 1055px) {
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }   
+}
+
+@media (max-width: 768px) {
+    //  .heroText {
+    //         background-image: url('./../assets/header-image-gradiant.jpg');  
+    //     }
+
+        .sidebarLinks {
+            display: none;
+        }
+
+        h2 {
+            padding-bottom: 50px;
+        }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-size: 4rem;
+        }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
