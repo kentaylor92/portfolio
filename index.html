@@ -48,7 +48,7 @@
     <section class="aboutMe wrapper" id="aboutMe">  
         <div class="aboutMeInfo">
             <div class="aboutMeImage">
-                <img src="./assets/about-me-small.png" alt="Headshot of Ken Taylor">
+                <img data-src="./assets/about-me-small.png" alt="Headshot of Ken Taylor" class="lazyload">
             </div>
             <div class="aboutMeText">
                 <h2>About Me</h2>
@@ -118,7 +118,7 @@
         <div class="projectFlex">
             <div class="project">
                 <div class="projectImageContainer">
-                    <img src="./assets/podcast-commuter-small.png" alt="Podcast Commuter app displayed on a Macbook and iPhone." class="scrollLeft" data-delay="0.3s">
+                    <img data-src="./assets/podcast-commuter-small.png" alt="Podcast Commuter app displayed on a Macbook and iPhone." class="scrollLeft lazyload" data-delay="0.3s">
                 </div>
                 <div class="projectInfo">
                     <h3>Podcast Commuter</h3>
@@ -138,7 +138,7 @@
             </div>
             <div class="project reverse">
                 <div class="projectImageContainer">
-                    <img src="./assets/bookshelf-platforms-small.png" alt="Bookshelf app displayed on a Macbook and iPhone" class="scrollRight" data-delay="0.3s">
+                    <img data-src="./assets/bookshelf-platforms-small.png" alt="Bookshelf app displayed on a Macbook and iPhone" class="scrollRight lazyload" data-delay="0.3s">
                 </div>
                 <div class="projectInfo">
                     <h3>Bookshelf</h3>
@@ -159,7 +159,7 @@
             </div>
             <div class="project">
                 <div class="projectImageContainer">
-                    <img src="./assets/eventurer-platforms-small.png" alt="Eventurer app displayed on a Macbook and iPhone." class="scrollLeft" data-delay="0.3s">
+                    <img data-src="./assets/eventurer-platforms-small.png" alt="Eventurer app displayed on a Macbook and iPhone." class="scrollLeft lazyload" data-delay="0.3s">
                 </div>
                 <div class="projectInfo">
                     <h3>Eventurer</h3>
@@ -182,7 +182,7 @@
             </div>
             <div class="project reverse">
                 <div class="projectImageContainer">
-                    <img src="./assets/brain-flex-platforms-small.png" alt="Brain Flex app displayed on a Macbook and iPhone." class="scrollRight" data-delay="0.3s">
+                    <img data-src="./assets/brain-flex-platforms-small.png" alt="Brain Flex app displayed on a Macbook and iPhone." class="scrollRight lazyload" data-delay="0.3s">
                 </div>
                 <div class="projectInfo">
                     <h3>Brain Flex</h3>
@@ -202,7 +202,7 @@
             </div>
             <div class="project">
                 <div class="projectImageContainer">
-                    <img src="./assets/willow-platforms-small.png" alt="Willow, a PSD conversion project, displayed on a Macbook and Iphone." class="scrollLeft" data-delay="0.3s">
+                    <img data-src="./assets/willow-platforms-small.png" alt="Willow, a PSD conversion project, displayed on a Macbook and Iphone." class="scrollLeft lazyload" data-delay="0.3s">
                 </div>
                 <div class="projectInfo">
                     <h3>Willow</h3>
@@ -270,7 +270,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src='./jquery.ripples-master/dist/jquery.ripples-min.js'></script>
+        <script src='./jquery.ripples-master/dist/jquery.ripples-min.js'></script>
+        <script src="lazysizes.min.js" async></script>
     <script src='./scripts.js'></script>
 </body>
 </html>
