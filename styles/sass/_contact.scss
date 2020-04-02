@@ -4,15 +4,17 @@
     width: 60%;
     padding-top: 60px;
     -webkit-padding-before: 60px;
+    
 }
 
 .contactMe {
-    border: 2px solid $accent-color;
     margin-top: 100px;
     
      .formInnerWrapper {
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
+        padding:  5% 10%;
+        border: 2px solid $accent-color;
     }
         
     form {

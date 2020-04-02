@@ -277,6 +277,10 @@ body {
   font-family: "Muli", sans-serif, sans-serif;
 }
 
+main {
+  padding-top: 60px;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1350px;
@@ -832,6 +836,7 @@ header .navBar {
 
 .latestWork {
   padding-top: 60px;
+  -webkit-padding-before: 60px;
   background-color: #6ecfd9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a8f0f8), color-stop(33%, #ffffff), color-stop(66%, #a8f0f8), to(#ffffff));
   background-image: linear-gradient(180deg, #a8f0f8 0%, #ffffff 33%, #a8f0f8 66%, #ffffff 100%);
@@ -1135,16 +1140,18 @@ header .navBar {
   margin-bottom: 50px;
   width: 60%;
   padding-top: 60px;
+  -webkit-padding-before: 60px;
 }
 
 .contactMe {
-  border: 2px solid #e73058;
   margin-top: 100px;
 }
 
 .contactMe .formInnerWrapper {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  padding: 5% 10%;
+  border: 2px solid #e73058;
 }
 
 .contactMe form {
