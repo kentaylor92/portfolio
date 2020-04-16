@@ -1,5 +1,5 @@
 header {
-
+    height: 100%;
     nav {
         background-color: white;
         position: fixed;
@@ -16,14 +16,13 @@ header {
             justify-content: space-between;
             align-items: center;
             height: 100%;
-            padding-bottom: 10px;               
         }
 
         a {
             font-size: 3rem;
             font-family: $heading-font;
             text-transform: uppercase;
-            transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;    
         }
 
         a:hover,
@@ -35,6 +34,7 @@ header {
         ul {
             display: flex;
             align-items: center;
+            
 
             li {
                 padding-left: 30px;
@@ -55,6 +55,7 @@ header {
 
     .navBar {
         transition: 0.3s ease-in-out; 
+        height: 100%;
     }
 }
 
@@ -80,7 +81,6 @@ header {
 .menu-btn {
     display: none;
     position: fixed;
-    top: 5px;
     right: 0;
     cursor: pointer;
     background: none;
@@ -98,6 +98,9 @@ header {
 
         .menu-btn {
             display: flex;
+            top: 15px;
+            right: 7.5%;
+            position: fixed;
         }
     
         .navBar {
@@ -107,27 +110,25 @@ header {
             flex-direction: column;
             justify-content: space-around;
             font-size: 4rem;
-            height: 50vh;
+            height: 100vh;
             width: 85vw;
             background-color: $secondary-color;   
     
             &.open {
                 display: flex;
+                flex-direction: column;
+                justify-content: center;   
             }
         }
 
         nav ul li {
             padding-left: 0;
+            padding-bottom: 60px;
 
             a {
                 font-size: 3rem;
             }
-        }
-
-        .menu-btn {
-            top: 8px;
-            right: 7.5%;
-        }   
+        }       
     }
 }
 
@@ -142,5 +143,6 @@ header {
         .navBar {
             width: 100%;
         }
+        
     }
 }

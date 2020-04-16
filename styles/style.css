@@ -277,10 +277,6 @@ body {
   font-family: "Muli", sans-serif, sans-serif;
 }
 
-main {
-  padding-top: 60px;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1350px;
@@ -312,6 +308,10 @@ h2 {
   }
 }
 
+header {
+  height: 100%;
+}
+
 header nav {
   background-color: white;
   position: fixed;
@@ -335,7 +335,6 @@ header nav .wrapper {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding-bottom: 10px;
 }
 
 header nav a {
@@ -380,6 +379,7 @@ header nav ul li a:focus {
 header .navBar {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  height: 100%;
 }
 
 .fa-bars,
@@ -404,7 +404,6 @@ header .navBar {
 .menu-btn {
   display: none;
   position: fixed;
-  top: 5px;
   right: 0;
   cursor: pointer;
   background: none;
@@ -421,6 +420,9 @@ header .navBar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 15px;
+    right: 7.5%;
+    position: fixed;
   }
   header .navBar {
     position: absolute;
@@ -433,7 +435,7 @@ header .navBar {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     font-size: 4rem;
-    height: 50vh;
+    height: 100vh;
     width: 85vw;
     background-color: #6ECFD9;
   }
@@ -441,16 +443,20 @@ header .navBar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   header nav ul li {
     padding-left: 0;
+    padding-bottom: 60px;
   }
   header nav ul li a {
     font-size: 3rem;
-  }
-  header .menu-btn {
-    top: 8px;
-    right: 7.5%;
   }
 }
 
@@ -464,6 +470,7 @@ header .navBar {
 }
 
 .heroText {
+  padding-top: 0;
   background-image: url("https://i.imgur.com/I7AxxGa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
