@@ -474,7 +474,7 @@ header .navBar {
   background-image: url("https://i.imgur.com/I7AxxGa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 700px;
   padding-top: 50px;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
@@ -497,25 +497,6 @@ header .navBar {
   top {
     opacity: 1;
   }
-}
-
-.heroText .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  padding-bottom: 10px;
-}
-
-.heroText .fa-chevron-down {
-  position: absolute;
-  bottom: 10%;
 }
 
 .heroText .sidebarLinks {
@@ -561,7 +542,6 @@ header .navBar {
   -webkit-background-clip: text;
   text-transform: uppercase;
   line-height: 1.25;
-  padding-left: 10px;
   font-weight: lighter;
   font-family: "Concert One", sans-serif;
   -webkit-transition: 3s ease-in;
@@ -588,14 +568,13 @@ header .navBar {
 
 .heroText .arrow {
   text-align: center;
-  margin: 0 auto;
 }
 
 .heroText .fa-chevron-down {
   font-size: 3rem;
-  margin: 0 auto;
   position: absolute;
   bottom: 10%;
+  right: 48.5%;
   text-shadow: 0px -12px 0 #e73058;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -608,14 +587,17 @@ header .navBar {
 
 @media (max-width: 1055px) {
   .heroText h1 {
-    font-size: 6rem;
+    font-size: 7rem;
   }
   .heroText h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 768px) {
+  .heroText {
+    height: 100vh;
+  }
   .heroText .sidebarLinks {
     display: none;
   }
@@ -628,15 +610,18 @@ header .navBar {
   .heroText h1 {
     padding-top: 10%;
     padding-bottom: 10%;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .heroText h2 {
     font-size: 2.8rem;
   }
+  .heroText .fa-chevron-down {
+    right: 46.5%;
+  }
 }
 
 .aboutMe {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 
 .aboutMe .aboutMeInfo {
@@ -661,7 +646,7 @@ header .navBar {
 }
 
 .aboutMe .aboutMeInfo .aboutMeText p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
@@ -678,111 +663,12 @@ header .navBar {
 }
 
 .aboutMe .aboutMeImage img {
-  border-radius: 100%;
-  width: 400px;
-  height: 420px;
-  margin-top: 20px;
+  width: 100%;
+  min-width: 365px;
+  margin-top: 40px;
   padding: 10px;
   -webkit-box-shadow: inset 0 0 0 5px #e73058, 0 0 0 6px #6ECFD9;
           box-shadow: inset 0 0 0 5px #e73058, 0 0 0 6px #6ECFD9;
-}
-
-.aboutMe .mobileAboutLinks {
-  display: none;
-}
-
-@media (max-width: 1050px) {
-  .aboutMe .aboutMeInfo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutMe .aboutMeInfo .aboutMeImage,
-  .aboutMe .aboutMeInfo .aboutMeText {
-    width: 80%;
-  }
-  .aboutMe .aboutMeInfo .aboutMeImage img {
-    margin: 0 auto;
-    width: 300px;
-    height: 315px;
-  }
-}
-
-@media (max-width: 768px) {
-  .aboutMe .aboutMeInfo .aboutMeText p {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .aboutMe .aboutMeInfo .aboutMeImage img {
-    width: 250px;
-    height: 263px;
-  }
-  .aboutMe h2 {
-    font-size: 5rem;
-    padding-top: 20px;
-  }
-}
-
-.skills {
-  padding: 60px 0 60px 0;
-  background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#a8f0f8));
-  background-image: linear-gradient(180deg, #ffffff 0%, #a8f0f8 100%);
-  position: relative;
-}
-
-.skills .skillsIcons {
-  opacity: 0;
-}
-
-.skills .skillsIcons ul {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .skillsIcons ul li {
-  width: calc(20% - 30px);
-  padding-bottom: 50px;
-}
-
-.skills .skillsIcons ul li:hover i,
-.skills .skillsIcons ul li:focus i {
-  color: #e73058;
-}
-
-.skills .skillsIcons ul img {
-  width: 80px;
-  margin: 0 auto;
-}
-
-.skills i {
-  font-size: 6rem;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.skills p {
-  font-size: 2rem;
-  padding-top: 10px;
 }
 
 @-webkit-keyframes anim1 {
@@ -811,42 +697,55 @@ header .navBar {
   }
 }
 
-@media (max-width: 1060px) {
-  .skills .skillsIcons ul li {
-    width: calc(25% - 30px);
+.aboutMe .mobileAboutLinks {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .aboutMe .aboutMeInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .skills p {
-    font-size: 1.8rem;
+  .aboutMe .aboutMeInfo .aboutMeImage,
+  .aboutMe .aboutMeInfo .aboutMeText {
+    width: 80%;
+  }
+  .aboutMe .aboutMeInfo .aboutMeImage img {
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
-  .skills .skillsIcons ul li {
-    width: 33%;
-  }
-  .skills p {
+  .aboutMe .aboutMeInfo .aboutMeText p {
     font-size: 1.6rem;
-  }
-  .skills i {
-    font-size: 7rem;
   }
 }
 
 @media (max-width: 480px) {
-  .skills i {
-    font-size: 6rem;
+  .aboutMe .aboutMeInfo .aboutMeImage img {
+    width: 250px;
+    height: 263px;
   }
-  .skills h2 {
+  .aboutMe h2 {
     font-size: 5rem;
+    padding-top: 20px;
   }
 }
 
 .latestWork {
-  padding-top: 60px;
+  padding-top: 80px;
   -webkit-padding-before: 60px;
   background-color: #6ecfd9;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a8f0f8), color-stop(33%, #ffffff), color-stop(66%, #a8f0f8), to(#ffffff));
-  background-image: linear-gradient(180deg, #a8f0f8 0%, #ffffff 33%, #a8f0f8 66%, #ffffff 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(33%, #a8f0f8), color-stop(66%, #a8f0f8), to(#ffffff));
+  background-image: linear-gradient(180deg, #ffffff 0%, #a8f0f8 33%, #a8f0f8 66%, #ffffff 100%);
   position: relative;
 }
 
@@ -891,19 +790,16 @@ header .navBar {
 
 .latestWork .projectInfo h3 {
   font-size: 4rem;
-}
-
-.latestWork .projectInfo .projectClassification {
-  font-size: 2.2rem;
-  padding: 0 0 30px 0;
+  padding-bottom: 20px;
 }
 
 .latestWork .projectInfo p {
   font-size: 1.6rem;
+  padding-bottom: 25px;
 }
 
 .latestWork .projectInfo :nth-child(3) {
-  padding-bottom: 30px;
+  color: #3f3e3e;
 }
 
 .latestWork .projectInfo li {
@@ -1046,9 +942,6 @@ header .navBar {
   .latestWork .projectInfo h3 {
     text-align: center;
   }
-  .latestWork .projectInfo .projectClassification {
-    text-align: center;
-  }
   .latestWork .projectInfo :nth-child(3) {
     text-align: center;
   }
@@ -1139,6 +1032,87 @@ header .navBar {
   }
   .latestWork .projectImageContainer {
     min-width: 10px;
+  }
+}
+
+.skills {
+  padding: 60px 0 60px 0;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.skills .skillsIcons {
+  opacity: 0;
+}
+
+.skills .skillsIcons ul {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skillsIcons ul li {
+  width: calc(20% - 30px);
+  padding-bottom: 50px;
+}
+
+.skills .skillsIcons ul li:hover i,
+.skills .skillsIcons ul li:focus i {
+  color: #e73058;
+}
+
+.skills .skillsIcons ul img {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.skills i {
+  font-size: 6rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.skills p {
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+@media (max-width: 1060px) {
+  .skills .skillsIcons ul li {
+    width: calc(25% - 30px);
+  }
+  .skills p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills .skillsIcons ul li {
+    width: 33%;
+  }
+  .skills p {
+    font-size: 1.6rem;
+  }
+  .skills i {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills i {
+    font-size: 6rem;
+  }
+  .skills h2 {
+    font-size: 5rem;
   }
 }
 
