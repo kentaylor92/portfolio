@@ -3,7 +3,7 @@
         background-image: url('https://i.imgur.com/I7AxxGa.jpg');  
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 700px;
         padding-top: 50px;
         animation: fadein 4s;
         position: relative;
@@ -12,19 +12,6 @@
             from {opacity: 0;}
             top {opacity: 1};
         }
-
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            padding-bottom: 10px;               
-        }
-
-         .fa-chevron-down {
-        position: absolute;
-        bottom: 10%;
-    }
 
     .sidebarLinks {
         width: 7.5%;
@@ -68,7 +55,7 @@
         -webkit-background-clip: text;
         text-transform: uppercase;
         line-height: 1.25;
-        padding-left: 10px;
+        // padding-left: 10px;
         font-weight: lighter;
         font-family: $heading-font;
         transition: 3s ease-in;
@@ -86,14 +73,14 @@
 
     .arrow {
         text-align: center;
-        margin: 0 auto;
+        
     }
 
     .fa-chevron-down {
         font-size: 3rem;
-        margin: 0 auto;
         position: absolute;
         bottom: 10%;
+        right: 48.5%;
         text-shadow: 0px -12px 0 $accent-color;
         transition: 0.4s;
     }
@@ -102,7 +89,6 @@
     .fa-chevron-down:focus {
         opacity: 0.5;
     }
-
 };
 
    
@@ -112,17 +98,19 @@
     .heroText {
         
         h1 {
-            font-size: 6rem;
+            font-size: 7rem;
         }
     
         h2 {
-            font-size: 4rem;
+            font-size: 5rem;
         }   
     }
 }
 
 @media (max-width: 768px) {
      .heroText {
+         height: 100vh;
+
          .sidebarLinks {
              display: none;
          }
@@ -138,11 +126,15 @@
         h1 {
             padding-top: 10%;
             padding-bottom: 10%;
-            font-size: 4rem;
+            font-size: 4.5rem;
             }
     
         h2 {
             font-size: 2.8rem;
+        }
+
+        .fa-chevron-down {
+            right: 46.5%;
         }
     }
 }
