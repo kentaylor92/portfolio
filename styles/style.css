@@ -526,6 +526,7 @@ header .navBar {
 .heroText h1 {
   font-size: 8rem;
   padding-top: 10%;
+  text-shadow: 3px -2px 0 #e73058;
 }
 
 .heroText h2 {
