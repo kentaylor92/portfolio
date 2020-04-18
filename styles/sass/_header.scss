@@ -4,12 +4,7 @@ header {
         background-color: white;
         position: fixed;
         width: 100%;
-        height: 50px;
         z-index: 1;
-
-        a {
-            outline: none;
-        }
         
         .wrapper {
             display: flex;
@@ -19,10 +14,12 @@ header {
         }
 
         a {
-            font-size: 3rem;
+            font-size: 2.1rem;
             font-family: $heading-font;
             text-transform: uppercase;
-            transition: 0.3s ease-in-out;    
+            transition: 0.3s ease-in-out; 
+            outline: none;   
+            padding: 12px 0;
         }
 
         a:hover,
@@ -41,9 +38,10 @@ header {
             }
     
             li a {
-                font-size: 2.5rem; 
+                font-size: 1.9rem; 
                 text-transform: uppercase;
                 transition: 0.3s ease-in-out;
+                letter-spacing: 1.5px;
             }
 
             li a:hover,
@@ -65,6 +63,7 @@ header {
     font-size: 3rem;
     transition: 0.3s ease-in-out;
     color: $secondary-color;
+    top: 0;
 }
 
 .fa-bars:hover,
@@ -86,7 +85,6 @@ header {
     background: none;
     border: none;
     outline: none;
-    padding: 0;
     transform: all 0.3s ease-in-out;
     z-index: 2;  
 }
@@ -98,8 +96,8 @@ header {
 
         .menu-btn {
             display: flex;
-            top: 15px;
-            right: 7.5%;
+            top: 8px;
+            right: 6.5%;
             position: fixed;
         }
     
