@@ -159,7 +159,7 @@
 
             li {
                 margin: 0 auto;
-                padding: 0px;
+                padding-bottom: 25px;
             }
 
             .listNormal {
@@ -168,7 +168,7 @@
                 .firstListItem {
                     padding-left: 0;
                 }
-            }           
+            }
         }
 
         .listReverse {
@@ -177,6 +177,12 @@
 
             .lastListItem {
                 padding-right: 0;
+            }
+        }
+
+        .reverse {
+            .projectInfo {
+                text-align: left;
             }
         }
 
@@ -190,6 +196,31 @@
 @media (max-width: 768px) {
     .latestWork {
 
+        .projectInfo {
+
+            h3 {
+                text-align: left;
+            }
+
+            :nth-child(3) {
+                text-align: left;
+            }
+
+            li {
+                text-align: left;
+                margin: 0;
+                padding: 0 25px 25px 0;
+            }
+
+            .listNormal {
+                justify-content: flex-start;
+
+                .firstListItem {
+                    padding-left: 0;
+                }
+            }                     
+        }
+
         .projectImageContainer {
             width: 90%;
             margin: 0 auto;
@@ -200,7 +231,7 @@
         }
 
         .projectLinks {
-            margin: 0 auto;
+            margin: 0;
             text-align: center;
             width: 160px;
             display: flex;
@@ -214,26 +245,43 @@
 
         .reverse {
             .projectInfo {
+                text-align: left;
+
+                li {
+                    margin: 0;
+                    padding-right: 25px;
+                }
 
                 .projectLinks a {
+                    text-align: center;
                     margin: 0 0 8px 0;
                 }
             }
-        }
+
+            .listReverse {
+                justify-content: flex-start;
+                padding: 0px;
+
+                .lastListItem {
+                    padding-right: 0;
+                }
+            }
+
+        }       
     }
 }
 
 @media (max-width: 550px) {
     .latestWork {
         .projectInfo {
-            width: 100%;
+            width: 90%;
 
             .listNormal,
             .listReverse {
                 flex-direction: column;
 
                 li {
-                    margin: 0 auto;
+                    // margin: 0 auto;
                     padding: 5px 0;
                 }
             }
@@ -248,7 +296,7 @@
         }
 
         .projectImageContainer {
-            width: 95%;
+            width: 85%;
             margin: 0 auto;
         }
 

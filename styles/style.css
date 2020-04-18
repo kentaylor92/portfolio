@@ -294,12 +294,13 @@ body {
 }
 
 h2 {
-  font-family: "Concert One", sans-serif;
-  font-size: 5.5rem;
+  font-family: "Calistoga", sans-serif;
+  font-size: 4.5rem;
   text-align: center;
   margin-bottom: 50px;
   text-shadow: -3px -3px 0px #e73058;
   text-transform: uppercase;
+  letter-spacing: 1.4px;
 }
 
 @media (max-width: 480px) {
@@ -316,12 +317,7 @@ header nav {
   background-color: white;
   position: fixed;
   width: 100%;
-  height: 50px;
   z-index: 1;
-}
-
-header nav a {
-  outline: none;
 }
 
 header nav .wrapper {
@@ -338,11 +334,13 @@ header nav .wrapper {
 }
 
 header nav a {
-  font-size: 3rem;
-  font-family: "Concert One", sans-serif;
+  font-size: 2.1rem;
+  font-family: "Calistoga", sans-serif;
   text-transform: uppercase;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  outline: none;
+  padding: 12px 0;
 }
 
 header nav a:hover,
@@ -365,10 +363,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  letter-spacing: 1.5px;
 }
 
 header nav ul li a:hover,
@@ -388,6 +387,7 @@ header .navBar {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   color: #6ECFD9;
+  top: 0;
 }
 
 .fa-bars:hover,
@@ -409,7 +409,6 @@ header .navBar {
   background: none;
   border: none;
   outline: none;
-  padding: 0;
   -webkit-transform: all 0.3s ease-in-out;
           transform: all 0.3s ease-in-out;
   z-index: 2;
@@ -420,8 +419,8 @@ header .navBar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 15px;
-    right: 7.5%;
+    top: 8px;
+    right: 6.5%;
     position: fixed;
   }
   header .navBar {
@@ -536,6 +535,7 @@ header .navBar {
 
 .heroText h1,
 .heroText h2 {
+  font-family: "Calistoga", sans-serif;
   text-align: center;
   color: black;
   -moz-background-clip: text;
@@ -543,10 +543,9 @@ header .navBar {
   text-transform: uppercase;
   line-height: 1.25;
   font-weight: lighter;
-  font-family: "Concert One", sans-serif;
   -webkit-transition: 3s ease-in;
   transition: 3s ease-in;
-  animation: fadein 4s;
+  animation: fadein 3s;
   -webkit-animation: fadein 4s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 4s;
@@ -589,9 +588,6 @@ header .navBar {
   .heroText h1 {
     font-size: 7rem;
   }
-  .heroText h2 {
-    font-size: 5rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -601,16 +597,12 @@ header .navBar {
   .heroText .sidebarLinks {
     display: none;
   }
-  .heroText h2 {
-    padding-bottom: 50px;
-  }
 }
 
 @media (max-width: 480px) {
   .heroText h1 {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    font-size: 4.5rem;
+    padding-top: 20%;
+    font-size: 5.8rem;
   }
   .heroText h2 {
     font-size: 2.8rem;
@@ -664,7 +656,7 @@ header .navBar {
 
 .aboutMe .aboutMeImage img {
   width: 100%;
-  min-width: 365px;
+  min-width: 350px;
   margin-top: 40px;
   padding: 10px;
   -webkit-box-shadow: inset 0 0 0 5px #e73058, 0 0 0 6px #6ECFD9;
@@ -704,9 +696,9 @@ header .navBar {
 @media (max-width: 1050px) {
   .aboutMe .aboutMeInfo {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -731,8 +723,7 @@ header .navBar {
 
 @media (max-width: 480px) {
   .aboutMe .aboutMeInfo .aboutMeImage img {
-    width: 250px;
-    height: 263px;
+    min-width: 200px;
   }
   .aboutMe h2 {
     font-size: 5rem;
@@ -947,7 +938,7 @@ header .navBar {
   }
   .latestWork .projectInfo li {
     margin: 0 auto;
-    padding: 0px;
+    padding-bottom: 25px;
   }
   .latestWork .projectInfo .listNormal {
     -webkit-box-pack: center;
@@ -966,6 +957,9 @@ header .navBar {
   .latestWork .listReverse .lastListItem {
     padding-right: 0;
   }
+  .latestWork .reverse .projectInfo {
+    text-align: left;
+  }
   .latestWork .projectLinks {
     margin: 0 auto;
     text-align: center;
@@ -973,6 +967,25 @@ header .navBar {
 }
 
 @media (max-width: 768px) {
+  .latestWork .projectInfo h3 {
+    text-align: left;
+  }
+  .latestWork .projectInfo :nth-child(3) {
+    text-align: left;
+  }
+  .latestWork .projectInfo li {
+    text-align: left;
+    margin: 0;
+    padding: 0 25px 25px 0;
+  }
+  .latestWork .projectInfo .listNormal {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .latestWork .projectInfo .listNormal .firstListItem {
+    padding-left: 0;
+  }
   .latestWork .projectImageContainer {
     width: 90%;
     margin: 0 auto;
@@ -981,7 +994,7 @@ header .navBar {
     min-width: 300px;
   }
   .latestWork .projectLinks {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     width: 160px;
     display: -webkit-box;
@@ -996,14 +1009,31 @@ header .navBar {
   .latestWork .projectLinks a {
     margin: 0 0 8px 0;
   }
+  .latestWork .reverse .projectInfo {
+    text-align: left;
+  }
+  .latestWork .reverse .projectInfo li {
+    margin: 0;
+    padding-right: 25px;
+  }
   .latestWork .reverse .projectInfo .projectLinks a {
+    text-align: center;
     margin: 0 0 8px 0;
+  }
+  .latestWork .reverse .listReverse {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0px;
+  }
+  .latestWork .reverse .listReverse .lastListItem {
+    padding-right: 0;
   }
 }
 
 @media (max-width: 550px) {
   .latestWork .projectInfo {
-    width: 100%;
+    width: 90%;
   }
   .latestWork .projectInfo .listNormal,
   .latestWork .projectInfo .listReverse {
@@ -1014,7 +1044,6 @@ header .navBar {
   }
   .latestWork .projectInfo .listNormal li,
   .latestWork .projectInfo .listReverse li {
-    margin: 0 auto;
     padding: 5px 0;
   }
 }
@@ -1024,7 +1053,7 @@ header .navBar {
     font-size: 5rem;
   }
   .latestWork .projectImageContainer {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
   }
   .latestWork img {
